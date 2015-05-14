@@ -5,7 +5,7 @@
 
 	<groupId>com.schabiyo.demo</groupId>
 	<artifactId>cd</artifactId>
-	<version>0.0.1-SNAPSHOT-${build.number}</version>
+	<version>${build.number}-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>cd</name>
