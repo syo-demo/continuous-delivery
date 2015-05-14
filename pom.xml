@@ -5,7 +5,7 @@
 
 	<groupId>com.schabiyo.demo</groupId>
 	<artifactId>cd</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT-${build.number}</version>
 	<packaging>jar</packaging>
 
 	<name>cd</name>
@@ -51,6 +51,22 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        			<groupId>org.apache.Maven.plugins</groupId>
+        			<artifactId>Maven-jar-plugin</artifactId>
+        			<version>2.6</version>
+        			<configuration>
+          				<archive>
+             					<index>true</index>
+             					<manifest>
+                					<addClasspath>true</addClasspath>
+             					</manifest>
+             					<manifestEntries>
+                					<Implementation-Version>${build.number}</Implementation-Version>
+             					</manifestEntries>
+          				</archive>
+        			</configuration>
+     			</plugin>
 		</plugins>
 	</build>
 
