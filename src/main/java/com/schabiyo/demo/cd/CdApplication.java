@@ -14,7 +14,7 @@ public class CdApplication {
     @RequestMapping("/")
     @ResponseBody
     String home(){
-	return "Welcome to a CD demo powered by Cloud Foundry";
+	return "Welcome to a CD demo powered by Cloud Foundry. This was changed";
     }
 
     public static void main(String[] args) {
