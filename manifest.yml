@@ -1,6 +1,6 @@
 applications:
 - name: cd-demo
   memory: 1GB
-  buildpack: https://github.com/cloudfoundry/java-buildpack
+  buildpack: syo-java-buildpack
   instances: 1
   host: cd-demo
