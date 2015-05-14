@@ -1,0 +1,5 @@
+applications:
+- name: cd-demo
+  memory: 680M
+  instances: 1
+  host: cd-demo
